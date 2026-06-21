@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Haydi Namaza — Mindfulness ve cemaat ruhunu birleştiren ilk namaz uygulaması. Huşu Skoru, Kervan, Zikir Matik, Cami Bulucu. iOS ve Android'de ücretsiz."/>
+  <title>Haydi Namaza — İbadet Hayatınızın Rehberi</title>
+  <link rel="icon" type="image/png" href="assets/icon.png"/>
+  <link rel="apple-touch-icon" href="assets/icon.png"/>
+  <link rel="shortcut icon" href="assets/icon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ══════════════════ LOADER ══════════════════ -->
+<div id="loader">
+  <div class="loader-inner">
+    <img src="assets/icon.png" class="loader-logo" alt="Haydi Namaza"/>
+    <p class="loader-title">Haydi Namaza</p>
+    <p class="loader-sub">İbadet hayatınızın rehberi</p>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ══════════════════ NAV ══════════════════ -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">
+      <img src="assets/icon.png" alt="" class="nav-icon"/>
+      <span>Haydi Namaza</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#ozellikler">Özellikler</a></li>
+      <li><a href="#ekranlar">Ekranlar</a></li>
+      <li><a href="#kervan">Kervan</a></li>
+      <li><a href="#yorumlar">Yorumlar</a></li>
+      <li><a href="#sss">SSS</a></li>
+    </ul>
+    <a href="#indir" class="nav-cta">Ücretsiz İndir</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="mobileMenu">
+    <a href="#ozellikler">Özellikler</a>
+    <a href="#ekranlar">Ekranlar</a>
+    <a href="#kervan">Kervan</a>
+    <a href="#yorumlar">Yorumlar</a>
+    <a href="#sss">SSS</a>
+    <a href="#indir" class="mobile-cta">Ücretsiz İndir</a>
+  </div>
+</nav>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section id="hero">
+  <div class="hero-pattern">
+    <div class="hero-geo-ring"></div>
+    <div class="hero-geo-ring"></div>
+    <div class="hero-geo-ring"></div>
+  </div>
+
+  <div class="hero-container">
+    <!-- LEFT -->
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        v1.7 · iOS &amp; Android'de Ücretsiz
+      </div>
+      <h1 class="hero-title reveal">
+        Mindfulness ve<br/>Cemaat Ruhunu<br/>
+        <span class="hero-accent">Birleştiren İlk<br/>Namaz Uygulaması</span>
+      </h1>
+      <p class="hero-desc reveal">
+        Namaz vakitleri, Huşu Skoru, Kervan, Zikir Matik, Cami Bulucu, 
+        Kıble ve daha fazlası — ibadet hayatınızı anlayan tek uygulama.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="https://apps.apple.com/tr/app/haydi-namaza-huzur-mindfulness/id6760186557?l=tr" target="_blank" class="btn-store btn-apple">
+          <div class="btn-store-icon"><svg width="22" height="27" viewBox="0 0 814 1000" fill="white"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-57.8-155.5-127.4C46 790.7 0 663 0 541.8c0-194.3 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"/></svg></div>
+          <div class="btn-store-text"><small>Download on the</small><strong>App Store</strong></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.haydinamaza.app" target="_blank" class="btn-store btn-google">
+          <div class="btn-store-icon"><svg width="24" height="24" viewBox="0 0 48 48">
+  <path fill="#EA4335" d="M24 20.8L6.6 3.4C7.4 3 8.4 2.8 9.5 3L32.3 16 24 20.8z"/>
+  <path fill="#4285F4" d="M5 5.6C4.4 6.5 4 7.7 4 9.2v29.6c0 1.5.4 2.7 1 3.6L24 24 5 5.6z"/>
+  <path fill="#FBBC04" d="M38.5 20.6l-6.2-3.6L24 22.8l8.3 5.8 6.3-3.6c1.8-1 1.8-3.5-.1-4.4z"/>
+  <path fill="#34A853" d="M24 25.2L5 43.6c.2.1.5.2.7.3L32.3 32 24 25.2z"/>
+</svg></div>
+          <div class="btn-store-text"><small>Get it on</small><strong>Google Play</strong></div>
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><strong class="count" data-target="50000">0</strong><span>Aktif Kullanıcı</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong class="count" data-target="4.9">0</strong><span>App Store Puanı</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>%100</strong><span>Ücretsiz</span></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Phones -->
+    <div class="hero-phones reveal">
+      <div class="phone-stack">
+        <div class="phone-glow"></div>
+        <div class="phone-side">
+          <div class="iphone-frame iphone-md">
+            <div class="iphone-notch"></div>
+            <img src="assets/screens/huşuyönetimi.png" alt="Huşu Skoru"/>
+          </div>
+        </div>
+        <div class="phone-main">
+          <div class="iphone-frame iphone-lg">
+            <div class="iphone-notch"></div>
+            <img src="assets/screens/anasayfa.png" alt="Ana Sayfa"/>
+          </div>
+        </div>
+      </div>
+      <div class="hero-float hero-float-1">
+        <span class="float-dot" style="background:#4ade80"></span>
+        Akşam 20:47 · Huzur içinde
+      </div>
+      <div class="hero-float hero-float-2">
+        🐪 Kervan #2 Global
+      </div>
+      <div class="hero-float hero-float-3">
+        📿 2.031 Zikir Çekildi
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path d="M0,45 C480,90 960,0 1440,45 L1440,90 L0,90 Z" fill="#F5F1E8"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ══════════════════ FEATURES ══════════════════ -->
+<section id="ozellikler" class="features-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag reveal">Özellikler</p>
+      <h2 class="section-title reveal">İbadet Hayatınız İçin<br/><span>Her Şey Tek Yerde</span></h2>
+      <p class="section-desc reveal">Sade, güvenilir ve kapsamlı — günlük manevi ihtiyaçlarınız tek uygulamada.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feature-card reveal" style="--d:.0s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:#F0FFF4">🕌</div>
+        <div class="feat-body">
+          <div class="feat-badge">Üyeliksiz</div>
+          <h3>Namaz Vakitleri</h3>
+          <p>Konumunuza göre hassas 5 vakit, Hicri takvim. Tam ekran ezan alarmı Uşşak, Hicaz ve Rast makam seçimiyle.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--d:.06s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:#E0F2FE">📊</div>
+        <div class="feat-body">
+          <div class="feat-badge feat-badge-teal">Gamification</div>
+          <h3>Huşu Skoru</h3>
+          <p>Namaz 7p, zikir 0.5p, Kur'an 0.5p, oruç 7p, sadaka 1p. İbadet eğriminizi takip edin, tefekkür kartlarıyla ilham alın.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--d:.12s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:var(--gold-bg)">🐪</div>
+        <div class="feat-body">
+          <div class="feat-badge feat-badge-gold">Sosyal</div>
+          <h3>Kervan</h3>
+          <p>Arkadaşlarla kervan kurun. Sükunet puanı biriktirin, vahaya adım atın. Global sıralamada haftanın en huzurlu kervanı olun.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--d:.18s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:#F5F3FF">📿</div>
+        <div class="feat-body">
+          <div class="feat-badge feat-badge-purple">Çok Sevilen</div>
+          <h3>Zikir Matik</h3>
+          <p>Niyete göre zikir seç — Salavat, Evlilik, Sağlık, Rızık, Eğitim. Grup halkaları, dua halkası ve hatim oluştur.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--d:.24s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:#F0FFF4">🗺️</div>
+        <div class="feat-body">
+          <div class="feat-badge">Üyeliksiz</div>
+          <h3>Cami Bulucu</h3>
+          <p>Yakınınızda 100+ cami haritada. İmam profili, cemaat üyeliği, etkinlikler ve cami buluşma planı oluşturma.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--d:.30s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:#FFF0F0">🧭</div>
+        <div class="feat-body">
+          <div class="feat-badge">Üyeliksiz</div>
+          <h3>Kıble Bulucu</h3>
+          <p>Pusula ile Ka'be yönü, hesaplanan açı ve mesafe. Hizalamayla titreşim geri bildirimi. Nerede olursanız olun.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--d:.36s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:var(--gold-bg)">🎡</div>
+        <div class="feat-body">
+          <div class="feat-badge feat-badge-gold">Günlük</div>
+          <h3>Huzur Çarkı</h3>
+          <p>Her gün bir kez çevir; dua, ayet, hadis, tefekkür, sadaka veya 10 Huşu Puanı kazan. "Bugün kalbine düşen nasibi gör."</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--d:.42s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:#F0FFF4">👥</div>
+        <div class="feat-body">
+          <div class="feat-badge feat-badge-teal">Sosyal</div>
+          <h3>Huzur Halkam</h3>
+          <p>Dostlar, planlar, cemaat ve kervan tek çatıda. Arkadaşlarını namaza davet et, nudge ile hatırlat, birlikte ilerle.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--d:.48s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:#F5F3FF">👨‍💼</div>
+        <div class="feat-body">
+          <div class="feat-badge feat-badge-purple">Yeni</div>
+          <h3>İmam &amp; Cemaat</h3>
+          <p>İmam profiline başvur, cami hikayesi yaz, etkinlik oluştur. Cemaat üyeleri için duyuru ve istatistik tablosu.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--d:.54s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:var(--gold-bg)">📱</div>
+        <div class="feat-body">
+          <div class="feat-badge feat-badge-gold">Widget</div>
+          <h3>Ana Ekran Widget'ları</h3>
+          <p>Uygulama açmadan namaz vakti, zikir sayacı, hadis ve tefekkür. iOS kilit ekranı destekli 3 farklı widget.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--d:.60s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:#F0FFF4">🌙</div>
+        <div class="feat-body">
+          <div class="feat-badge">Üyeliksiz</div>
+          <h3>Ramazan Paketi</h3>
+          <p>İmsakiye, iftar geri sayımı, sahur alarmı ve Ramazan duaları. Toplu iftar alarmını tek dokunuşla kur.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--d:.66s">
+        <div class="feat-line"></div>
+        <div class="feat-icon" style="background:#E0F2FE">🏆</div>
+        <div class="feat-body">
+          <div class="feat-badge feat-badge-teal">Eğlenceli</div>
+          <h3>İrfan Yarışması &amp; Zekat</h3>
+          <p>Kur'an &amp; ibadet bilgi yarışması, peygamber kişilik analizi. TL, döviz, altın ve gümüş üzerinden zekat hesabı.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ SCREENS ══════════════════ -->
+<section id="ekranlar" class="screens-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag reveal">Uygulama Ekranları</p>
+      <h2 class="section-title reveal">Her Ekran,<br/><span>Bir Deneyim</span></h2>
+      <p class="section-desc reveal">Her detay, ibadet hayatınızı kolaylaştırmak için düşünüldü.</p>
+    </div>
+
+    <div class="screens-grid">
+      <div class="screen-item reveal" style="--d:0s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/anasayfa.png" alt="Ana Sayfa" loading="lazy"/></div>
+        <p class="screen-label">🏠 Ana Sayfa</p>
+        <p class="screen-sub">Vakitler, Kervan &amp; Tefekkür</p>
+      </div>
+      <div class="screen-item reveal" style="--d:.07s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/zikirekranı.png" alt="Zikir" loading="lazy"/></div>
+        <p class="screen-label">📿 Zikir Matik</p>
+        <p class="screen-sub">Niyete göre &amp; halka sistemi</p>
+      </div>
+      <div class="screen-item reveal" style="--d:.14s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/camiibulucu.png" alt="Cami Bulucu" loading="lazy"/></div>
+        <p class="screen-label">🕌 Cami Bulucu</p>
+        <p class="screen-sub">Haritada 100+ cami</p>
+      </div>
+      <div class="screen-item reveal" style="--d:.21s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/kervanlar.png" alt="Kervan" loading="lazy"/></div>
+        <p class="screen-label">🐪 Kervan</p>
+        <p class="screen-sub">Sükunet puanı &amp; vaha</p>
+      </div>
+      <div class="screen-item reveal" style="--d:.28s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/huşuyönetimi.png" alt="Huşu Skoru" loading="lazy"/></div>
+        <p class="screen-label">📊 Huşu Skoru</p>
+        <p class="screen-sub">İbadet takip &amp; Huzur Çarkı</p>
+      </div>
+      <div class="screen-item reveal" style="--d:.35s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/huzurhalkam.png" alt="Huzur Halkam" loading="lazy"/></div>
+        <p class="screen-label">👥 Huzur Halkam</p>
+        <p class="screen-sub">Dostlar, planlar &amp; cemaat</p>
+      </div>
+      <div class="screen-item reveal" style="--d:.42s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/kıblebulucu.png" alt="Kıble" loading="lazy"/></div>
+        <p class="screen-label">🧭 Kıble Bulucu</p>
+        <p class="screen-sub">Pusula &amp; Ka'be mesafesi</p>
+      </div>
+      <div class="screen-item reveal" style="--d:.49s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/camiidetay-imalı.png" alt="İmam" loading="lazy"/></div>
+        <p class="screen-label">👨‍💼 İmam Profili</p>
+        <p class="screen-sub">Cami hikayesi &amp; etkinlikler</p>
+      </div>
+      <div class="screen-item reveal" style="--d:.56s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/huzurçarkı.png" alt="Huzur Çarkı" loading="lazy"/></div>
+        <p class="screen-label">🎡 Huzur Çarkı</p>
+        <p class="screen-sub">Günlük manevi görev &amp; ödül</p>
+      </div>
+      <div class="screen-item reveal" style="--d:.63s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/gününduası.png" alt="Günün Duası" loading="lazy"/></div>
+        <p class="screen-label">🤲 Günün Duası</p>
+        <p class="screen-sub">Ayet, hadis &amp; tefekkür</p>
+      </div>
+      <div class="screen-item reveal" style="--d:.70s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/prfil.png" alt="Profil" loading="lazy"/></div>
+        <p class="screen-label">👤 Profil</p>
+        <p class="screen-sub">İbadetlerim &amp; kervan</p>
+      </div>
+      <div class="screen-item reveal" style="--d:.77s">
+        <div class="iphone-frame iphone-sm"><div class="iphone-notch"></div><img src="assets/screens/ezanokuyucu.png" alt="Ezan Alarmı" loading="lazy"/></div>
+        <p class="screen-label">🔔 Ezan Alarmı</p>
+        <p class="screen-sub">Makam seçimli tam ekran ezan</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ KERVAN ══════════════════ -->
+<section id="kervan" class="kervan-section">
+  <div class="kervan-bg"></div>
+  <div class="container">
+    <div class="kervan-inner">
+
+      <div class="kervan-content">
+        <p class="kervan-tag reveal">⭐ Öne Çıkan Özellik</p>
+        <h2 class="kervan-title reveal">
+          Çölden <em>Vahaya</em>,<br/>Birlikte İlerleyin
+        </h2>
+        <p class="kervan-desc reveal">
+          Arkadaşlarınızla bir kervan kurun. Her namaz ve zikir sizi vahaya bir adım daha yaklaştırır. 
+          Global sıralamada yerinizi alın, haftanın en huzurlu kervanı ana sayfada yer alsın.
+        </p>
+        <div class="kervan-cards">
+          <div class="kc-card reveal" style="--d:.1s">
+            <span class="kc-emoji">🐪</span>
+            <div>
+              <strong>Vaha Yolculuğu</strong>
+              <p>Çölde ilerleyen deve kervanı metaforu ile manevi yolculuk</p>
+            </div>
+          </div>
+          <div class="kc-card reveal" style="--d:.18s">
+            <span class="kc-emoji">☀️</span>
+            <div>
+              <strong>Sükunet Puanı</strong>
+              <p>5 vakit namaz + zikir = kervanın vahaya yaklaşması</p>
+            </div>
+          </div>
+          <div class="kc-card reveal" style="--d:.26s">
+            <span class="kc-emoji">🔔</span>
+            <div>
+              <strong>Nudge Sistemi</strong>
+              <p>Yavaşlayan kervan dostuğunu nazikçe hatırlat</p>
+            </div>
+          </div>
+          <div class="kc-card reveal" style="--d:.34s">
+            <span class="kc-emoji">🏆</span>
+            <div>
+              <strong>Global Sıralama</strong>
+              <p>Haftanın en huzurlu kervanları ana sayfada sergilenir</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kervan-visual reveal">
+        <div class="kervan-phone-wrap">
+          <div class="kervan-glow"></div>
+          <div class="iphone-frame iphone-lg">
+            <div class="iphone-notch"></div>
+            <img src="assets/screens/kervanlar.png" alt="Kervan Ekranı" loading="lazy"/>
+          </div>
+          <div class="kervan-float kf-1">
+            <span class="kf-badge">#2</span>
+            Haftanın Sıralaması
+          </div>
+          <div class="kervan-float kf-2">
+            🌴 Vahaya 669 adım kaldı
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ HUŞU ══════════════════ -->
+<section class="husu-section">
+  <div class="container">
+    <div class="husu-inner">
+
+      <div class="husu-phone-wrap reveal">
+        <div class="husu-phone-bg"></div>
+        <div class="iphone-frame iphone-lg">
+          <div class="iphone-notch"></div>
+          <img src="assets/screens/huşuyönetimi.png" alt="Huşu Skoru" loading="lazy"/>
+        </div>
+      </div>
+
+      <div class="husu-content">
+        <p class="section-tag reveal">📊 İbadet Takibi</p>
+        <h2 class="section-title reveal" style="text-align:left">Huşu Skoru<br/><span>ile Gelişin</span></h2>
+        <p class="husu-desc reveal">
+          İbadetleriniz artık ölçülebilir. Namaz, zikir, Kur'an, oruç ve sadakadan puan 
+          biriktirin. Kişisel eğriminizi takip edin, skora göre tefekkür ve zikir önerileri alın.
+        </p>
+        <div class="husu-points reveal">
+          <div class="hp-item"><span class="hp-val">7p</span><span>Her Namaz</span></div>
+          <div class="hp-item"><span class="hp-val">0.5p</span><span>100 Zikir</span></div>
+          <div class="hp-item"><span class="hp-val">0.5p</span><span>Kur'an (1s)</span></div>
+          <div class="hp-item"><span class="hp-val">7p</span><span>Oruç</span></div>
+          <div class="hp-item"><span class="hp-val">1p</span><span>Sadaka</span></div>
+          <div class="hp-item"><span class="hp-val">1-2p</span><span>İyilik</span></div>
+        </div>
+        <div class="wheel-teaser reveal">
+          <img src="assets/screens/huzurçarkı.png" alt="Huzur Çarkı" loading="lazy"/>
+          <div class="wheel-teaser-text">
+            <strong>🎡 Huzur Çarkı</strong>
+            <p>Her gün bir kez çevir; bugün kalbine düşen nasibi gör ve manevi görevini tamamla.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ STATS ══════════════════ -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal"><span class="stat-icon">👥</span><strong class="count" data-target="50000">0</strong><span>Aktif Kullanıcı</span></div>
+      <div class="stat-card reveal" style="--d:.1s"><span class="stat-icon">⭐</span><strong class="count" data-target="4.9">0</strong><span>App Store Puanı</span></div>
+      <div class="stat-card reveal" style="--d:.2s"><span class="stat-icon">🕌</span><strong class="count" data-target="85000">0</strong><span>Kayıtlı Cami</span></div>
+      <div class="stat-card reveal" style="--d:.3s"><span class="stat-icon">📿</span><strong class="count" data-target="10000000">0</strong><span>Çekilen Zikir</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ REVIEWS ══════════════════ -->
+<section id="yorumlar" class="reviews-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag reveal">Yorumlar</p>
+      <h2 class="section-title reveal">Kullanıcılarımız<br/><span>Ne Diyor?</span></h2>
+    </div>
+  </div>
+  <div class="reviews-track-wrapper">
+    <div class="reviews-track">
+      <div class="review-card"><div class="review-stars">★★★★★</div><p>"Ezan alarmı müthiş — telefon kilitliyken bile tam ekran açılıyor. Makam seçimi çok güzel bir dokunuş."</p><div class="review-author"><div class="review-avatar" style="background:#1B4332">AK</div><div><strong>Ahmet K.</strong><small>App Store · 5 yıldız</small></div></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p>"Kervan özelliği arkadaşlarımla ibadet etme motivasyonumu inanılmaz artırdı. Sükunet puanı biriktirmek çok eğlenceli."</p><div class="review-author"><div class="review-avatar" style="background:#7C3AED">FY</div><div><strong>Fatma Y.</strong><small>App Store · 5 yıldız</small></div></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p>"Zikir halkaları çok güzel. Arkadaşlarımla ortak halka kurup birlikte subhanallah çekiyoruz. Allah razı olsun."</p><div class="review-author"><div class="review-avatar" style="background:#D97706">MÖ</div><div><strong>Mehmet Ö.</strong><small>Google Play · 5 yıldız</small></div></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p>"Huşu Skoru hangi ibadette eksik kaldığımı gösteriyor. Gerçekten fark yaratan, düşünülmüş bir özellik."</p><div class="review-author"><div class="review-avatar" style="background:#0D8161">ZD</div><div><strong>Zeynep D.</strong><small>App Store · 5 yıldız</small></div></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p>"Cami bulucu seyahatte çok işime yarıyor. Nereye gitsem yakındaki camileri anında bulabiliyorum."</p><div class="review-author"><div class="review-avatar" style="background:#0EA5E9">HT</div><div><strong>Hüseyin T.</strong><small>Google Play · 5 yıldız</small></div></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p>"Huzur Çarkı her sabah uygulamayı açmanın sebebi oldu. Günün duasıyla başlamak güne farklı bir anlam katıyor."</p><div class="review-author"><div class="review-avatar" style="background:#10B981">EŞ</div><div><strong>Elif Ş.</strong><small>App Store · 5 yıldız</small></div></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p>"İmam olarak kayıt oldum, cami etkinlikleri paylaşabiliyorum. Dijital cemaat yönetimi harika çalışıyor."</p><div class="review-author"><div class="review-avatar" style="background:#1B4332">İM</div><div><strong>İmam M.</strong><small>App Store · 5 yıldız</small></div></div></div>
+      <!-- duplicate set for infinite loop -->
+      <div class="review-card"><div class="review-stars">★★★★★</div><p>"Ezan alarmı müthiş — telefon kilitliyken bile tam ekran açılıyor. Makam seçimi çok güzel bir dokunuş."</p><div class="review-author"><div class="review-avatar" style="background:#1B4332">AK</div><div><strong>Ahmet K.</strong><small>App Store · 5 yıldız</small></div></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p>"Kervan özelliği arkadaşlarımla ibadet etme motivasyonumu inanılmaz artırdı. Sükunet puanı biriktirmek çok eğlenceli."</p><div class="review-author"><div class="review-avatar" style="background:#7C3AED">FY</div><div><strong>Fatma Y.</strong><small>App Store · 5 yıldız</small></div></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p>"Zikir halkaları çok güzel. Arkadaşlarımla ortak halka kurup birlikte subhanallah çekiyoruz. Allah razı olsun."</p><div class="review-author"><div class="review-avatar" style="background:#D97706">MÖ</div><div><strong>Mehmet Ö.</strong><small>Google Play · 5 yıldız</small></div></div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p>"Huşu Skoru hangi ibadette eksik kaldığımı gösteriyor. Gerçekten fark yaratan, düşünülmüş bir özellik."</p><div class="review-author"><div class="review-avatar" style="background:#0D8161">ZD</div><div><strong>Zeynep D.</strong><small>App Store · 5 yıldız</small></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ DOWNLOAD ══════════════════ -->
+<section id="indir" class="download-section">
+  <div class="dl-bg"></div>
+  <div class="container">
+    <div class="download-inner">
+      <div class="download-content reveal">
+        <img src="assets/icon.png" alt="Haydi Namaza" class="dl-app-icon"/>
+        <h2>Hemen İndirin,<br/><span>Yolculuğa Başlayın</span></h2>
+        <p>iOS ve Android'de ücretsiz. Kayıt olmadan namaz vakti, kıble ve cami bulucu hemen kullanılabilir. Kervan ve sosyal özellikler için ücretsiz üye olun.</p>
+        <div class="hero-actions">
+          <a href="https://apps.apple.com/tr/app/haydi-namaza-huzur-mindfulness/id6760186557?l=tr" target="_blank" class="btn-store btn-apple">
+            <div class="btn-store-icon"><svg width="22" height="27" viewBox="0 0 814 1000" fill="white"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-57.8-155.5-127.4C46 790.7 0 663 0 541.8c0-194.3 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"/></svg></div>
+            <div class="btn-store-text"><small>Download on the</small><strong>App Store</strong></div>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.haydinamaza.app" target="_blank" class="btn-store btn-google-dl">
+            <div class="btn-store-icon"><svg width="24" height="24" viewBox="0 0 48 48">
+  <path fill="#EA4335" d="M24 20.8L6.6 3.4C7.4 3 8.4 2.8 9.5 3L32.3 16 24 20.8z"/>
+  <path fill="#4285F4" d="M5 5.6C4.4 6.5 4 7.7 4 9.2v29.6c0 1.5.4 2.7 1 3.6L24 24 5 5.6z"/>
+  <path fill="#FBBC04" d="M38.5 20.6l-6.2-3.6L24 22.8l8.3 5.8 6.3-3.6c1.8-1 1.8-3.5-.1-4.4z"/>
+  <path fill="#34A853" d="M24 25.2L5 43.6c.2.1.5.2.7.3L32.3 32 24 25.2z"/>
+</svg></div>
+            <div class="btn-store-text"><small>Get it on</small><strong>Google Play</strong></div>
+          </a>
+        </div>
+        <p class="dl-note">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          Canlı Ka'be yayını uygulamada mevcut
+        </p>
+      </div>
+      <div class="download-phones reveal">
+        <div class="dl-phone-1 iphone-frame iphone-md">
+          <div class="iphone-notch"></div>
+          <img src="assets/screens/ezanokuyucu.png" alt="Ezan Alarmı" loading="lazy"/>
+        </div>
+        <div class="dl-phone-2 iphone-frame iphone-lg">
+          <div class="iphone-notch"></div>
+          <img src="assets/screens/gününduası.png" alt="Günün Duası" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FAQ ══════════════════ -->
+<section id="sss" class="faq-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag reveal">SSS</p>
+      <h2 class="section-title reveal">Sık Sorulan<br/><span>Sorular</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal"><button class="faq-q"><span>Haydi Namaza tamamen ücretsiz mi?</span><div class="faq-icon">+</div></button><div class="faq-a"><p>Evet, tamamen ücretsizdir. Namaz vakitleri, kıble bulucu, cami bulucu ve zikir matik gibi temel özellikler kayıt olmadan kullanılabilir. Kervan, cemaat ve arkadaş özellikleri için ücretsiz kayıt gereklidir.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><span>Kervan nedir, nasıl çalışır?</span><div class="faq-icon">+</div></button><div class="faq-a"><p>Kervan, arkadaşlarınızla birlikte kurduğunuz ibadet grubudur. Her namaz ve zikir Sükunet Puanı kazandırır. Puan biriktirdikçe vahaya adım adım ilerlersiniz. Global sıralamada haftanın en huzurlu kervanı ana sayfada yer alır.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><span>Huşu Skoru nasıl hesaplanır?</span><div class="faq-icon">+</div></button><div class="faq-a"><p>Namaz 7p, 100 zikir 0.5p, Kur'an (1 sayfa) 0.5p, oruç 7p, sadaka 1p, iyilik 1-2p kazandırır. Puan aralığına göre farklı tefekkür kartları ve zikir önerileri alırsınız.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><span>İmam başvurusu nasıl yapılır?</span><div class="faq-icon">+</div></button><div class="faq-a"><p>Profil ekranında "İmam Başvurusu" menüsünden il, ilçe ve camini seçip bilgilerini doldurabilirsin. Onaylandıktan sonra cami hikayesi yazabilir, etkinlik ekleyebilir ve cemaat duyuruları yapabilirsin.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><span>Widget'lar hangi cihazlarda çalışır?</span><div class="faq-icon">+</div></button><div class="faq-a"><p>iOS ve Android'de üç farklı widget mevcuttur: Namaz Vakitleri, Zikir Sayacı ve Hadis &amp; Tefekkür. iOS'ta kilit ekranı widget desteği de bulunmaktadır.</p></div></div>
+      <div class="faq-item reveal"><button class="faq-q"><span>İnternet bağlantısı gerekli mi?</span><div class="faq-icon">+</div></button><div class="faq-a"><p>Zikir matik ve daha önce yüklenen namaz vakitleri çevrimdışı çalışır. Cami haritası, kervan ve sosyal özellikler için internet bağlantısı gereklidir.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo footer-logo-link">
+          <img src="assets/icon.png" alt="Haydi Namaza" class="nav-icon"/>
+          <span>Haydi Namaza</span>
+        </a>
+        <p>Mindfulness ve cemaat ruhunu birleştiren ilk namaz uygulaması. iOS &amp; Android'de ücretsiz.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Keşfet</h4>
+        <ul>
+          <li><a href="#ozellikler">Özellikler</a></li>
+          <li><a href="#ekranlar">Ekranlar</a></li>
+          <li><a href="#kervan">Kervan</a></li>
+          <li><a href="#yorumlar">Yorumlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Destek</h4>
+        <ul>
+          <li><a href="#sss">SSS</a></li>
+          <li><a href="#">Gizlilik Politikası</a></li>
+          <li><a href="#">Kullanım Koşulları</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>İndir</h4>
+        <a href="https://apps.apple.com/tr/app/haydi-namaza-huzur-mindfulness/id6760186557?l=tr" target="_blank" class="footer-store-badge footer-badge-apple">
+          <svg viewBox="0 0 814 1000" fill="white" width="18" height="22"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-57.8-155.5-127.4C46 790.7 0 663 0 541.8c0-194.3 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"/></svg>
+          <div><small>Download on the</small><strong>App Store</strong></div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.haydinamaza.app" target="_blank" class="footer-store-badge footer-badge-gp">
+          <svg viewBox="0 0 48 48" width="20" height="20"><path fill="#EA4335" d="M24 20.8L6.6 3.4C7.4 3 8.4 2.8 9.5 3L32.3 16 24 20.8z"/><path fill="#4285F4" d="M5 5.6C4.4 6.5 4 7.7 4 9.2v29.6c0 1.5.4 2.7 1 3.6L24 24 5 5.6z"/><path fill="#FBBC04" d="M38.5 20.6l-6.2-3.6L24 22.8l8.3 5.8 6.3-3.6c1.8-1 1.8-3.5-.1-4.4z"/><path fill="#34A853" d="M24 25.2L5 43.6c.2.1.5.2.7.3L32.3 32 24 25.2z"/></svg>
+          <div><small>Get it on</small><strong>Google Play</strong></div>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Haydi Namaza. Tüm hakları saklıdır.</p>
+      <p class="footer-gold">Allah kabul etsin 🤲</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
