@@ -596,6 +596,8 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .footer-store-badge svg{flex-shrink:0}
 .footer-store-badge small{display:block;font-size:.6rem;color:rgba(255,255,255,.5);margin-bottom:1px}
 .footer-store-badge strong{display:block;font-size:.88rem;color:white;font-weight:700}
+.footer-social-link{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.45);font-size:.84rem;font-weight:500;margin-bottom:12px;transition:color .2s}
+.footer-social-link:hover{color:var(--gold-l)}
 .footer-social{margin-top:16px;display:flex;flex-direction:column;gap:10px}
 .footer-social-link{display:flex;align-items:center;gap:8px;font-size:.84rem;color:rgba(255,255,255,.45);font-weight:500;transition:color .2s}
 .footer-social-link:hover{color:var(--gold-l)}
